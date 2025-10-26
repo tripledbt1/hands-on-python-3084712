@@ -17,7 +17,16 @@
   "files.autoSave": "afterDelay",
   "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
   "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "python.defaultInterpreterPath": "/workspaces/hands-on-python-3084712/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "jupyter.jupyterServerType": "local",
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [
+    79,
+    99
+  ],
+  "terminal.integrated.scrollback": 20000
 }
