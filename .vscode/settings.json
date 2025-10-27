@@ -1,32 +1,48 @@
 {
-  "editor.bracketPairColorization.enabled": true,
-  "editor.cursorBlinking": "solid",
+  // ====== Editor Settings ======
   "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
-  "editor.fontLigatures": false,
   "editor.fontSize": 22,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.lineNumbers": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.bracketPairColorization.enabled": true,
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
+  "editor.lineNumbers": "on",
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "editor.useTabStops": true,
-  "emmet.triggerExpansionOnTab": true,
-  "explorer.openEditors.visible": 0,
-  "files.autoSave": "afterDelay",
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
-  "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true,
-  "python.defaultInterpreterPath": "/workspaces/hands-on-python-3084712/.venv/bin/python",
-  "python.terminal.activateEnvironment": true,
-  "jupyter.jupyterServerType": "local",
-  "files.trimTrailingWhitespace": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "editor.rulers": [
     79,
     99
   ],
-  "terminal.integrated.scrollback": 20000
+  // ====== File Handling ======
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  // ====== Terminal ======
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.scrollback": 20000,
+  // ====== Workbench UI ======
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.statusBar.visible": true,
+  // ====== Python Environment ======
+  "python.defaultInterpreterPath": "/workspaces/hands-on-python-3084712/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  // ====== Jupyter ======
+  "jupyter.jupyterServerType": "local",
+  "jupyter.askForKernelRestart": false,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  // ====== Black Formatter ======
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "python.formatting.provider": "none",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "88"
+  ]
 }
