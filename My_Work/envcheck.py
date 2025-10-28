@@ -24,9 +24,11 @@ print("===========================================\n")
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib as mpl  # <- add
 import seaborn as sns
 import random
 from random import randint, choice
+import scipy as sp  # <- add (top-level package)
 import scipy.stats as stats
 
 # --- ⚙️ Display & Visualization Settings ---
@@ -39,9 +41,10 @@ pd.set_option("display.width", 1000)
 random.seed(42)
 np.random.seed(42)
 
-print(f"NumPy version: {np.__version__}")
-print(f"Pandas version: {pd.__version__}")
-print(f"Matplotlib version: {plt.matplotlib.__version__}")
-print(f"Seaborn version: {sns.__version__}")
+print(f"NumPy version:      {np.__version__}")
+print(f"Pandas version:     {pd.__version__}")
+print(f"Matplotlib version: {mpl.__version__}")  # <- use mpl
+print(f"Seaborn version:    {sns.__version__}")
+print(f"SciPy version:      {sp.__version__}")  # <- optional but correct
 
 print("\n🚀 Codespace environment initialized successfully.")
