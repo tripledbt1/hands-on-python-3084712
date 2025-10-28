@@ -12,37 +12,65 @@
   "editor.useTabStops": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.rulers": [
-    79,
-    99
-  ],
+  "editor.rulers": [79, 99],
+
   // ====== File Handling ======
   "files.autoSave": "afterDelay",
   "files.trimTrailingWhitespace": true,
+
   // ====== Terminal ======
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.scrollback": 20000,
+
   // ====== Workbench UI ======
   "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
+
   // ====== Python Environment ======
   "python.defaultInterpreterPath": "/workspaces/hands-on-python-3084712/.venv/bin/python",
   "python.terminal.activateEnvironment": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+
   // ====== Jupyter ======
   "jupyter.jupyterServerType": "local",
   "jupyter.askForKernelRestart": false,
   "jupyter.notebookFileRoot": "${workspaceFolder}",
+
   // ====== Black Formatter ======
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
   },
   "python.formatting.provider": "none",
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "88"
+  "python.formatting.blackArgs": ["--line-length", "88"],
+
+  // ====== Performance Tweaks ======
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ipynb_checkpoints": true
+  },
+  "search.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ipynb_checkpoints": true
+  },
+
+  // ====== Git Integration ======
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // ====== Codespaces Stability ======
+  "remote.autoForwardPorts": false,
+  "codespaces.defaultExtensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-python.black-formatter",
+    "github.copilot"
   ]
 }
