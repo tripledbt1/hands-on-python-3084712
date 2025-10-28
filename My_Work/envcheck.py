@@ -30,6 +30,15 @@ import random
 from random import randint, choice
 import scipy as sp  # <- add (top-level package)
 import scipy.stats as stats
+from importlib.metadata import version, PackageNotFoundError
+
+
+def pkg_ver(name: str) -> str:
+    try:
+        return version(name)
+    except PackageNotFoundError:
+        return "unknown"
+
 
 # --- ⚙️ Display & Visualization Settings ---
 sns.set_theme(style="whitegrid", palette="muted")
@@ -44,7 +53,7 @@ np.random.seed(42)
 print(f"NumPy version:      {np.__version__}")
 print(f"Pandas version:     {pd.__version__}")
 print(f"Matplotlib version: {mpl.__version__}")  # <- use mpl
-print(f"Seaborn version:    {sns.__version__}")
+print(f"Seaborn version:    {pkg_ver('seaborn')}")
 print(f"SciPy version:      {sp.__version__}")  # <- optional but correct
 
 print("\n🚀 Codespace environment initialized successfully.")
