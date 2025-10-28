@@ -6,6 +6,8 @@
 # Purpose: Codespace for testing Python concepts and practicing code
 # ============================================
 
+# Run in bash terminal: python My_Work/envcheck.py
+
 # --- 💻 Environment & System Setup ---
 import os
 import sys
